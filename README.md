@@ -8,7 +8,7 @@ A responsive, pixel-perfect clone of the Netflix landing page and browsing exper
 * **Interactive Trailer Playback:** When a movie card is clicked, a custom modal opens to display the official movie trailer embedded from YouTube, enhancing user experience and demonstrating API handling.
 * **Smooth Horizontal Scrolling:** Implemented custom JavaScript to enable seamless, controlled horizontal scrolling of movie rows via arrow buttons.
 * **Responsive Design:** Fully optimized layout using Flexbox and Grid, ensuring a flawless viewing experience across desktop and mobile devices.
-* **Vanilla JavaScript Focus:** Achieved all dynamic behavior (API calls, DOM manipulation, event handling) without relying on external libraries or frameworks.
+* **Dynamic Content Display:** Utilizes local data structures (JavaScript objects) to dynamically render and display movie data, including poster images, titles, and categories (e.g., Trending Now).
 
 ## 🛠️ Tech Stack
 
