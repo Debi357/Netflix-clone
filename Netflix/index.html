@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix_clone</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="index">
+    <div class="navbar fixed-top">
+        <div class="container-fluid">
+            <div class="box">
+            <img src="pic/Netflix_logo.svg" alt="netflix logo" class="logo">
+            </div>
+        
+           <div class="dropdown">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">English
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">Hindi</a></li>
+                </ul>
+                <button type="button" class="btn btn-danger"><a href="Sign_in.html" class="text-white"style="text-decoration:none"><b>Sign in </b></a></button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-area1">
+    <div class="content">
+        <div class="flex-container text-white">
+                <div style="font-size: 3.5rem; font-weight: 900;"><b>Unlimited movies, TV <br>shows and more<br></div>
+                <div><h5 style="font-size: 1.25rem; font-weight: 500;">Starts at ₹149. Cancel at any time.</b></h5><br></div>
+                <div style="font-size:5px;"><h6> Ready to watch? Enter your email to create or restart your membership.</h6></div>    
+        </div>
+    </div>
+    <div class="sign-in">
+    <form action="#" >
+        <div class="d-flex justify-content-center align-items-center ">
+        <div class="form-floating">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+            <label for="floatingInput">Email address</label>
+        </div>
+        <button class="submit" type="submit" value="submit">Get Started ></button>
+    
+    </div>
+    </form>  
+    </div>
+    </div>
+</div>
+
+<section class="netflix-section">
+  <div class="curve-container"></div>
+<div class="trending-content">
+
+  <h2 class="section-title" style="padding-right: -20px;">Trending Now</h2>
+  <button class="arrow left" onclick="scrollTrending(-300)" style="margin-left: 90px;">&#10094;</button>
+  <button class="arrow right" onclick="scrollTrending(300)" style="margin-right: 90px;">&#10095;</button>
+  <div class="trending-wrapper">
+     
+    <div class="trending-card" onclick="showCardInfo(1)">
+      <img src="pic/wednesday.webp" alt="Wednesday">
+    </div>
+    <div class="trending-card" onclick="showCardInfo(2)">
+      <img src="pic/kapil-sharma.webp" alt="The Great Indian Kapil Show">
+    </div>
+    <div class="trending-card" onclick="showCardInfo(3)">
+      <img src="pic/Zende.webp" alt="Heartland">
+    </div>
+
+    <div class="trending-card"  onclick="showCardInfo(4)" >
+      <img src="pic/samrajya.webp" alt="Samrajya">
+    </div>
+    <div class="trending-card"  onclick="showCardInfo(5)">
+      <img src="pic/raid2.webp" alt="raid2">
+    </div>
+    <div class="trending-card"  onclick="showCardInfo(6)">
+      <img src="pic/mareesan.webp" alt="mareesan">
+    </div>
+    <div class="trending-card"  onclick="showCardInfo(7)">
+      <img src="pic/squidgame.webp" alt="squidgame">
+    </div>
+
+
+    <!-- Add more cards as needed -->
+
+</div>
+</div>
+</section>
+
+<!-- Netflix-style Info Modal -->
+<div id="infoScreen" class="info-modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeCardInfo()">&times;</span>
+
+    <div class="modal-img-container">
+  <img id="cardImage" class="modal-img" alt="Project Image">
+</div>
+
+
+    <div class="modal-details">
+      <h2 id="cardTitle"></h2>
+
+      <div class="tags" id="cardTags"></div>
+
+      <p id="cardDesc"></p>
+
+      <button class="get-started" id="cardLinkBtn">Get Started</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="container-fluid card-container">
+  <div class="container reason-card-container">
+    <h4 class="text-white" style="margin-bottom: 15px; margin-left: 25px;"><b>More reasons to join</b></h4>
+
+    <div class="reason-card">
+      <div class="row">
+        <div class="col-sm-3" >
+          <div class="card">
+            <div class="card-body">
+              
+              <div class="card-title">Enjoy on your TV</div>
+              <p class="card-text">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+            <img src="pic/smart-tv.png" alt="TV Icon" class="card-icon" style="height: 60px;">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body">
+              
+              <div class="card-title">Download your shows to watch offline</div>
+              <p class="card-text">Save your favourites easily and always have something to watch.</p>
+              <img src="pic/arrow-down.png" alt="Download Icon" class="card-icon">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3" >
+          <div class="card">
+            <div class="card-body">
+              
+              <div class="card-title">Watch everywhere</div>
+              <p class="card-text">Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
+              <img src="pic/telescope.png" alt="Device Icon" class="card-icon" style="height: 60px;">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body">
+              
+              <div class="card-title">Create profiles for kids</div>
+              <p class="card-text">Send kids on adventures with their favourite characters in a space made just for them — free with your membership.</p>
+              <img src="pic/toys.png" alt="Kids Icon" class="card-icon" style="margin-top: 45px;">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid faq-container">
+
+<div class="container faq-container">
+
+    <section class="faq">
+  <h4  style="padding-bottom: 20px;"><b>Frequently Asked Questions</b></h4>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      What is Netflix?
+      <span class="icon">+</span>
+    </button>
+    <div class="faq-answer">
+      <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.<br><br>
+
+You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      How much does Netflix cost?
+      <span class="icon">+</span>
+    </button>
+    <div class="faq-answer">
+      <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.</p>
+    </div>
+  </div>
+
+
+ <div class="faq-item">
+    <button class="faq-question">
+      Where can i watch?
+      <span class="icon">+</span>
+    </button>
+    <div class="faq-answer">
+      <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.<br><br>
+
+You can also download your favourite shows with the iOS or Android app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
+    </div>
+  </div>
+
+   <div class="faq-item">
+    <button class="faq-question">
+      How do I cancel?
+      <span class="icon">+</span>
+    </button>
+    <div class="faq-answer">
+      <p>Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">
+      What can I watch on Netflix?
+      <span class="icon">+</span>
+    </button>
+    <div class="faq-answer">
+      <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+    </div>
+  </div>
+  
+  
+   <div class="faq-item">
+    <button class="faq-question">
+     is Netflix good for kids?
+      <span class="icon">+</span>
+    </button>
+    <div class="faq-answer">
+      <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.<br><br>
+
+Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</p>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<div class="footer-sign-in">
+  <form action="#.php">
+    <div class="d-flex justify-content-center align-items-center flex-column">
+      <h3 style="font-size:15px; margin-bottom: 10px; color: white;">
+        Ready to watch? Enter your email to create or restart your membership.
+      </h3>
+
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="form-floating">
+          <input type="email" class="form-control" id="footerInput" placeholder="name@example.com" required>
+          <label for="footerInput">Email address</label>
+        </div>
+        <button class="footer-submit" type="submit">Get Started ></button>
+      </div>
+    </div>
+  </form>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <p style="margin-top: 25px;">Questions? Call 000-800-919-1743</p>
+            </div>
+        </div>
+
+        <div class="row" style="margin-bottom: 10px;">
+            <div class="col-md-3 col-sm-6">
+                <a href="FAQ.html">FAQ</a>
+            </div>
+
+             <div class="col-md-3 col-sm-6">
+                <a href="#">Help Center</a>
+            </div>
+
+             <div class="col-md-3 col-sm-6">
+                <a href="Sign_in.html">Account</a>
+            </div>
+
+             <div class="col-md-3 col-sm-6">
+                <a href="#">Media Centre</a>
+            </div>
+        </div>
+
+        <div class="row" style="margin-bottom: 10px;">
+            <div class="col-md-3 col-sm-6">
+                <a href="#">Investor Relations</a>
+            </div>
+
+             <div class="col-md-3 col-sm-6">
+                <a href="#">Jobs</a>
+            </div>
+
+             <div class="col-md-3 col-sm-6">
+                <a href="#">Ways to Watch</a>
+            </div>
+
+             <div class="col-md-3 col-sm-6">
+                <a href="Terms.html">Terms of Use</a>
+            </div>
+        </div>
+
+<div class="row" style="margin-bottom: 10px;">
+            <div class="col-md-3 col-sm-6">
+                <a href="#">Privacy</a>
+            </div>
+
+             <div class="col-md-3 col-sm-6">
+                <a href="#">Cookie Preferences</a>
+            </div>
+
+             <div class="col-md-3 col-sm-6">
+                <a href="corporate information.html">Corporate Information</a>
+            </div>
+
+             <div class="col-md-3 col-sm-6">
+                <a href="Contact us.html">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <a href="#">Speed Test</a>
+            </div>
+
+             <div class="col-md-3 col-sm-6">
+                <a href="#">Legal Notices</a>
+            </div>
+
+             <div class="col-md-3 col-sm-6">
+                <a href="#">Only on Netflix</a>
+            </div>
+
+             <div class="col-md-3 col-sm-6">
+                <a href="#"></a>
+            </div>
+        </div>
+
+        <div class="dropdown" style="padding-top: 45px;">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">English
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">Hindi</a></li>
+                </ul>
+        </div>
+<h6 style="font-size: 15px; margin-top: 15px; margin-bottom: 25px;  padding-bottom: 20px; font-weight: bold;">Netflix India</h6>
+    </div>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+<script src="js/custom.js"></script>
+
+</body>
+</html>
+
