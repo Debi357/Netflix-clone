@@ -16,11 +16,10 @@ A responsive, pixel-perfect clone of the Netflix landing page and browsing exper
 * **Styling:** Custom CSS (Flexbox & Grid), **Bootstrap** (Used for general layout/structure as seen in project files).
 
   ## 📸 Screenshots 
-![Screenshot 1](https://github.com/Debi357/Food-Ordering-Website/blob/main/home.png) 
-![Screenshot 2](https://github.com/Debi357/Food-Ordering-Website/blob/main/login.png) 
-![Screenshot 3](https://github.com/Debi357/Food-Ordering-Website/blob/main/menu.png) 
-![Screenshot 4](https://github.com/Debi357/Food-Ordering-Website/blob/main/cart.png) 
-![Screenshot 5](https://github.com/Debi357/Food-Ordering-Website/blob/main/checkout.png) 
+![Screenshot 1](https://github.com/Debi357/Netflix-clone/blob/main/Screenshot%20(83).png)<br><br>
+![Screenshot 2](https://github.com/Debi357/Netflix-clone/blob/main/Screenshot%20(84).png) <br><br>
+![Screenshot 3](https://github.com/Debi357/Netflix-clone/blob/main/Screenshot%20(92).png)
+
   
 ## 🚀 Getting Started
 
