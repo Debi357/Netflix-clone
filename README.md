@@ -27,7 +27,7 @@ To run this project locally, follow these steps:
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [YOUR-GITHUB-REPO-LINK]
+    git clone [https://github.com/Debi357/Netflix-clone]
     cd netflix-clone
     ```
 
