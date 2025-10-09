@@ -20,10 +20,6 @@ A responsive, pixel-perfect clone of the Netflix landing page and browsing exper
 ![Screenshot 2](https://github.com/Debi357/Netflix-clone/blob/main/Screenshot%20(84).png) <br><br>
 ![Screenshot 3](https://github.com/Debi357/Netflix-clone/blob/main/Screenshot%20(92).png)
 
-  
-## 🚀 Getting Started
-
-To run this project locally, follow these steps:
 
 ### Prerequisites
 
@@ -37,7 +33,7 @@ To run this project locally, follow these steps:
     cd netflix-clone
     ```
 
-3.  **Run Locally:**
+2.  **Run Locally:**
     * Open the `index.html` file directly in your web browser. (e.g., `file:///path/to/netflix-clone/index.html`)
 
 
