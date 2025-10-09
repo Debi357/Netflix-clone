@@ -39,8 +39,8 @@ To run this project locally, follow these steps:
 
  Debika Chakraborty
 
-* **GitHub:** [Link to your GitHub Profile]
-* **Portfolio:** [Link to your Portfolio Website]
+* **GitHub:** https://github.com/Debi357
+* **Linkedin:** www.linkedin.com/in/debika2025
 
 ## 📄 License
 
